@@ -1,0 +1,132 @@
+/* Start main settings */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  /*Primary Color*/
+  --Green: hsl(75, 94%, 57%);
+  /* Neutral Colors */
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--Off-Black);
+  color: var(--White);
+}
+
+.card {
+  background-color: var(--Dark-Grey);
+  border-radius: 15px;
+  padding: 40px;
+}
+
+@media (min-width: 375px) {
+  .card {
+    padding: 20px 30px;
+    /* height: 75%; */
+    width: 380px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    width: 380px;
+  }
+}
+
+.card .information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .information span {
+  display: block;
+  margin-bottom: 18px;
+}
+
+.card .information span img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.card .information span.address {
+  color: var(--Green);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.card .information span.position {
+  opacity: 50%;
+  margin-top: 15px;
+}
+
+.card .links {
+  display: grid;
+  margin-top: 10px;
+  height: 345px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+@media (min-width: 375px) {
+  .card .links {}
+}
+
+.card .links .btn {
+  background-color: var(--Grey);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.card .links .btn:hover {
+  background-color: var(--Green);
+  color: var(--Dark-Grey);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
